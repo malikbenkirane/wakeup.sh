@@ -1,0 +1,3 @@
+#!/bin/bash
+#osascript -e "set Volume 10"
+open ~/alarm.symlink
