@@ -28,3 +28,8 @@ $ bash wakeup.sh HH MM [FILE]
 ```
 
 Running `wakeup.sh` bash script will configure launch.d (with a plist file) to open $`HOME/alarm.symlink` at `HH`:`MM`. For example, `alarm.symlink` is a symbolic link to a `mp3`, `flac` or `m4a` file. But the symlink is only set when `FILE` is given. When the three arguments are given, it tests `wakeup` (no .sh) behaviour.
+
+# Roadmap
+
+1. Better user interface
+2. Default `alarm.symlink` alarm (or set up during the install ...)
