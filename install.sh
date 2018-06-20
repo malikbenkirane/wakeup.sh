@@ -1,7 +1,12 @@
-# install.sh
-# 1. copy wakeup.sh script to ~/Library/LaunchAgents from where and only where
-# wakeup.sh script is runnable
-# 2. give exec permission to wakeup and copy to ~/wakeup
-cp wakeup.sh ~/Library/LaunchAgents
+#!/bin/sh -e
+
+# install the planning script and launchctl config to ~/Library/LaunchAgents
+cp -p wakeup.sh org.wakeup.plist ~/Library/LaunchAgents
+
+# install the wakeup script
 chmod +x wakeup
-cp wakeup ~/
+cp -p wakeup ~/
+
+# inform
+echo Please read README.md
+echo Please edit ~/wakeup for this to actually work
